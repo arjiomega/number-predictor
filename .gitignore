@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Model
+mnist_clf.pickle
+
 # C extensions
 *.so
 
