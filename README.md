@@ -1,22 +1,25 @@
-# tkinter_to_numpy
+# Number Predictor
 
+A streamlit app for predicting the number drawn by the user.
 
-## SETUP
-setup environment using miniconda
-```bash
-conda create --no-default-packages -n <env_name>
-conda activate <env_name>
-conda install python=3.9
-```
-install required libraries
+![image](https://i.imgur.com/eCf06GH.png)
+
+## Usage
+
+Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
-prepare data
+
+Train the model our streamlit app is going to  use
 ```bash
-python load_data.py
+python model/train.py
 ```
-run
+
+Run the streamlit app
 ```bash
-python main.py
+export PYTHONPATH=$(pwd)
+streamlit run streamlit/app.py
 ```
+
+We need to export `PYTHONPATH` to easily handle the dependencies.
